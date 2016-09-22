@@ -39,11 +39,8 @@ var data = [{
 
 function initCtrl(data){
   var itemHtml = '';
-  //为了防止低版本浏览器不识别foreach方法，建议使用for循环
-  //``字符串拼接方式在实际开发中的时候也不是很建议使用
-  //如果在开发中使用了es6语法转es5的方法（babel)则可以使用
   data.forEach(function(item){
-    itemHtml += '<div class="img"><img src=' + item.imgUrl + '></div>' +'<div class="info"><div class="name"><span>' + item.infoName + '</span></div>' + '<div class="brief"><span>' + item.infoBrief + '</span></div>' + '<div class="price"><span>' + item.infoPrice + '</span></div></div>';
+    itemHtml += '<div id="img"><img src=' + item.imgUrl + '></div>' +'<div id="info"><div id="name"><span>' + item.infoName + '</span></div>' + '<div id="brief"><span>' + item.infoBrief + '</span></div>' + '<div id="price"><span>' + item.infoPrice + '</span></div></div>';
     console.log(item.infoName);
   });
   item.innerHTML = itemHtml;
@@ -53,7 +50,7 @@ initCtrl(data);
 txt.onkeyup = function(e){
   var str = txt.value;
   var result = data.filter(function(item){
-    if(item.infoName.toLowerCase().indexOf(str)>-1 || item.infoBrief.toLowerCase().indexOf(str)>-1 || item.infoPrice.toLowerCase().indexOf(str)>-1){
+    if(item.infoName.indexOf(str)>-1 || item.infoBrief.indexOf(str)>-1 || item.infoPrice.indexOf(str)>-1){
       return item;
     }
   });
