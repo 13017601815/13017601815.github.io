@@ -21,32 +21,35 @@ body{
   font-size: 18px;
   padding: 10px 0;
 }
-#img{
+.img{
   margin: 20px 0px;
+  width: 30%;
   /*height: 160px;*/
   display: inline-block;
   /*background-color: yellow;*/
-
 }
-#info{
-  margin: 20px 0;
-  width: 380px;
+.img img{
+  width: 100%;
+}
+.info{
+  width: 65%;
   display: inline-block;
+  /*margin-top: 30px;*/
 }
-#name{
+.info div{
+  margin-top: 15px;
+}
+.name{
   /*height: 30px;*/
   color: #333333;
-  font-size: 28px;
-  margin: 10px;
-}
-#brief{
   font-size: 24px;
-  color: rgb(132, 132, 132);
-  margin: 10px;
 }
-#price{
+.brief{
+  font-size: 20px;
+  color: rgb(132, 132, 132);
+}
+.price{
   height: 30px;
   color: rgb(246, 56, 0);
-  font-size: 28px;
-  margin: 10px;
+  font-size: 24px;
 }
