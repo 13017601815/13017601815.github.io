@@ -40,7 +40,10 @@ var data = [{
 function initCtrl(data){
   var itemHtml = '';
   data.forEach(function(item){
-    itemHtml += '<div id="img"><img src=' + item.imgUrl + '></div>' +'<div id="info"><div id="name"><span>' + item.infoName + '</span></div>' + '<div id="brief"><span>' + item.infoBrief + '</span></div>' + '<div id="price"><span>' + item.infoPrice + '</span></div></div>';
+    itemHtml += '<div class="img"><img src=' + item.imgUrl + '></div>' +
+    '<div class="info"><div class="name"><span>' + item.infoName + '</span></div>'
+     + '<div class="brief"><span>' + item.infoBrief + '</span></div>' +
+     '<div class="price"><span>' + item.infoPrice + '</span></div></div>';
     console.log(item.infoName);
   });
   item.innerHTML = itemHtml;
@@ -50,7 +53,9 @@ initCtrl(data);
 txt.onkeyup = function(e){
   var str = txt.value;
   var result = data.filter(function(item){
-    if(item.infoName.indexOf(str)>-1 || item.infoBrief.indexOf(str)>-1 || item.infoPrice.indexOf(str)>-1){
+    if(item.infoName.toLowerCase().indexOf(str)>-1 ||
+     item.infoBrief.toLowerCase().indexOf(str)>-1 || 
+    item.infoPrice.toLowerCase().indexOf(str)>-1){
       return item;
     }
   });
