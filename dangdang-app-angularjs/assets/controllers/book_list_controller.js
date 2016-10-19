@@ -1,6 +1,7 @@
-app.controller('bookListController',['$scope','commonService',function($scope,c_service){
+app.controller('bookListController',['$scope','commonService','$routeParams',function($scope,c_service,$routeParams){
   $scope.data = [];
-  c_service.getData(function(res){
+  var id = $routeParams.id;
+  c_service.getData(id,function(res){
     $scope.data = res.data.data;
   })
 }])
