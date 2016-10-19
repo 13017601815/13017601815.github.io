@@ -12,7 +12,7 @@ app.factory('commonService',['$http',function($http){
       callBack(res);
     },function(err){
       console.dir(err);
-      callBack(err);
+      // callBack(err);
     })
   }
   return service;
