@@ -10,7 +10,7 @@
         <div class="page__bd">
           <div ng-view>
           </div>
-                <div class="weui-tabbar" ng-controller='mainController'>
+                <div class="weui-tabbar" ng-controller='mainController' style="position:fixed;bottom:0px;">
                     <a href="#/" ng-click='linkTo(0)' class="weui-tabbar__item  {{selectedIndex==0?'weui-bar__item_on':''}}">
                         <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
                         <p class="weui-tabbar__label">首页</p>
