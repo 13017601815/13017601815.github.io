@@ -15,4 +15,5 @@ app.factory('commonService',['$http',function($http){
       callBack(err);
     })
   }
+  return service;
 }])
