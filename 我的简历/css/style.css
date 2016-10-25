@@ -1,0 +1,619 @@
+
+.intro{
+	width:100%;
+	height:100%;
+	text-align:left;
+	background:url(../images/header-bg.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+}
+.intro-text{
+	padding-top:400px;
+	padding-bottom:200px;
+	margin-left:100px;
+}
+
+.intro-text h1{
+	font-size:48px;
+	margin:20px 0;
+}
+.intro-text p{
+	font-size:20px;
+	color:#76818d;
+}
+.intro-text .btn{
+	background-color:#e9e6ed;
+}
+.intro-text .btn:hover{
+	background:#4d4d4d;
+	color:#fff;
+	border:1px solid #4d4d4d;
+}
+.intro-pic{
+	display:block;
+	width:100px;
+	height:100px;
+}
+.intro-pic img{
+	width:100%;
+	height:100%;
+}
+
+.Baymax{
+	width:70%;
+	height:100%;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.Baymax .stage{
+	width:100%;
+	height:100%;
+	margin-right:100px;
+	margin-top: 100px;
+	position:relative;
+}
+
+.Baymax .stage .head{
+	width:260px;
+	height:170px;
+	background-color:#e9e6ed;
+	text-align:center;
+	vertical-align:middle;
+	border:5px solid #4d4d4d;
+	border-radius:48%;
+	position:absolute;
+	top:50px;
+	right:100px;
+	z-index:9;
+	transform:rotate(-25deg);
+}
+
+.Baymax .stage .head .eyes{
+	display:inline-block;
+	width:100%;
+	height:45px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+
+.Baymax .stage .head .eye{
+	width:35px;
+	height:35px;
+	background-color:#000;
+	border-radius:50%;
+}
+.Baymax .stage .head .eye-right{
+	float:right;
+	margin-right:40px;
+}
+.Baymax .stage .head .eye-left{
+	float:left;
+	margin-left:40px;
+}
+.Baymax .stage .head .eyeline{
+	display:inline-block;
+	width:160px;
+	height:20px;
+	position:absolute;
+	top:3px;
+	right:40px;
+	border-bottom:2px solid #000;
+	border-right:2px solid transparent;
+	border-left:2px solid transparent;
+	border-radius:50%;
+	z-index:0;
+}
+
+/*眨眼睛*/
+
+.eye{
+	animation:blink 3s  infinite ease-in-out;
+}
+
+@keyframes blink{
+	0%,10%{
+		transfrom:scaley(1);
+	}
+	20%{
+		transform:scaley(0.2);
+	}
+	30%,100%{
+		transform:scaley(1);
+	}
+
+}
+
+.Baymax .stage .blush{
+	margin-top:95px;
+}
+.Baymax .stage .blush-left,.blush-right{
+	width:30px;
+	height:15px;
+	border-radius:50%;
+	background-color:#ff8458;
+}
+.Baymax .stage .blush-left{
+	float:left;
+	margin-left:20px;
+}
+.Baymax .stage .blush-right{
+	float:right;
+	margin-right:20px;
+}
+
+.Baymax .stage .body-main  .shoulder-right{
+	width:180px;
+	height:50px;
+	border-top:5px solid #4d4d4d;
+	border-right:5px solid transparent;
+	border-left:5px solid transparent;
+	border-radius:50%;
+	transform:rotate(20deg);
+	position:absolute;
+	top:150px;
+	right:0;
+}
+.body-main  .shoulder-left{
+	width:20px;
+	height:100px;
+	border-left:5px solid #4d4d4d;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+	border-radius:50%;
+	transform:rotate(35deg);
+	position:absolute;
+	top:200px;
+	right:310px;
+}
+.hands{
+	width:280px;
+	height:500px;
+	position:absolute;
+	right:200px;
+	top:260px;
+}
+.hands .finger{
+	float:left;
+	border-bottom:5px solid transparent;
+	border-top:5px solid #4d4d4d;
+	border-left:5px solid #4d4d4d;
+	border-right:5px solid #4d4d4d;
+	background-color:#eceaf0;
+}
+.hands .finger1{
+	width:50px;
+	height:55px;
+	border-radius:85% 55% 0 0;
+	transform:rotate(-20deg);
+}
+.hands .finger2{
+	width:50px;
+	height:70px;
+	border-radius:50% 50% 0 0;
+	margin-left:-5px;
+	margin-top:-30px;
+	transform:rotate(-5deg);
+	position:relative;
+	z-index:3;
+
+}
+.hands .finger3{
+	width:50px;
+	height:70px;
+	border-radius:45% 50% 0 0;
+	margin-top:-35px;
+	margin-left:-10px;
+	transform:rotate(-5deg);
+}
+.hands .finger4{
+	width:50px;
+	height:50px;
+	border-radius:55% 45% 0 0;
+	margin-left:-10px;
+	transform:rotate(10deg);
+	position:relative;
+	z-index:3;
+}
+.hands .palm-print{
+	width:80px;
+	height:80px;
+	border-top:5px solid #4d4d4d;
+	border-left:5px solid #4d4d4d;
+	border-right:5px solid transparent;
+	border-radius:50%;
+	transform:rotate(-45deg);
+	margin-left:100px;
+	margin-top:35px;
+	background-color:#eceaf0;
+}
+.arm1{
+	width:80px;
+	height:300px;
+	border-left:5px solid #4d4d4d;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+	border-radius:60%;
+	margin-top:-85px;
+	transform:rotate(-5deg);
+	background-color:#eceaf0;
+}
+.arm2{
+	width:40px;
+	height:280px;
+	border-right:5px solid #4d4d4d;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+	border-radius:20%;
+	margin-top:-290px;
+	margin-left:170px;
+	transform:rotate(-15deg);
+	background-color:#eceaf0;
+}
+.Baymax .say-hi{
+	position:absolute;
+	top:100px;
+	right:400px;
+	color:#ff8458;
+}
+.Baymax .stage .say-hi .text{
+	font-size:40px;
+	font-family:'微软雅黑';
+
+}
+
+.Baymax .stage .say-hi i{
+	font-size:10px;
+	position:absolute;
+	top:10px;
+	left:34px;
+}
+
+
+/*nav*/
+#nav{
+	position:relative;
+	z-index:5;
+	margin-bottom:-20px;
+}
+
+nav.affix{
+	top:0px;
+	width:100%;
+	}
+#nav .navbar{
+	border:none;
+	border-radius:0px;
+}
+#nav .navbar-default{
+	background-color:#2c3e50;
+}
+#nav .navbar-default a{
+	color:#f4f5f6;
+}
+#nav .navbar-brand{
+	line-height:30px;
+	font-size:28px;
+	font-weight:500;
+}
+#nav .navbar-nav a{
+	line-height:30px;
+}
+#nav .navbar-nav .active a{
+	color:#2c3e50;
+}
+
+/*about*/
+#about{
+	margin-top:20px;
+	height:100%;
+	padding:80px 0;
+	background:url(../images/skills-bg.jpg);
+ 	background-size:cover;
+ 	background-attachment:fixed;
+	position:relative;
+}
+.row{
+	margin-top: 100px;
+}
+.section-title hr{
+	display:inline-block;
+	width:70px;
+	height:4px;
+	background-color:#e87e04;
+	text-align:center;
+	border:none;
+}
+#about img{
+	width:140px;
+	height:140px;
+	border-radius:50%;
+}
+
+h2{
+	color:#2c3e50;
+}
+
+#about  .btn-primary{
+	color:#76818d;
+	background-color:rgba(255,255,255,0.1);
+	border-color:#76818d;
+}
+
+#about  .btn-primary:hover{
+	color:#f4f5f6;
+	background-color:#76818d;
+}
+
+#about i{
+	color:#e87e04;
+}
+#about .motto{
+	margin:20px 0;
+}
+
+#about .info{
+	margin:40px 0;
+}
+#about .info p{
+	font-size:16px;
+	font-weight:bold;
+	color:#2c3e50;
+	margin:10px 0;
+}
+
+#about .info-text{
+	position:relative;
+	margin:15px 0;
+}
+#about .info-text p{
+	margin:10px 0;
+	font-size:20px;
+}
+#about .info-text .quote-left{
+	position:absolute;
+	top:0;
+	left:0;
+}
+#about .info-text .quote-right{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+
+/*skills*/
+#skills{
+	height:100%;
+	padding:80px 0;
+	background:linear-gradient(to bottom,#ffffff 0%, #e7ecf1 49%,#ffffff 100%);
+}
+
+#skills p{
+	margin:10px 0  50px;
+}
+#skills h4{
+	color:#2c3e50;
+	font-weight:bold;
+}
+.skill{
+	width: 25% !important;
+}
+/*work*/
+#work{
+	height:100%;
+	padding:80px 0;
+	background:url(../images/work-bg.jpg);
+ 	background-size:cover;
+ 	background-attachment:fixed;
+	position:relative;
+
+}
+
+#work .carousel-inner{
+	background-color:rgba(232,126,4,0.8);
+}
+#work .item{
+	margin:20px 180px;
+}
+
+#work img{
+	float:left;
+	border:3px solid #f4f5f6;
+
+}
+
+#work .text{
+	float:left;
+	color:#fff;
+	margin-left:40px;
+	margin-top:20px;
+}
+#work .text h4{
+	font-size:26px;
+	font-weight:500;
+}
+#work .text p{
+	font-size:16px;
+	font-weight:500;
+}
+
+.works{
+	padding:10px 50px;
+
+}
+#work  .carousel-indicators{
+	bottom:-50px;
+}
+#work  .carousel-indicators .active{
+	background-color:#2c3e50;
+}
+#work  .carousel-indicators li{
+	border:1px solid #2c3e50;
+}
+#work .carousel-control{
+	width:2%;
+	background:none;
+	text-shadow:none;
+	cursor:pointer;
+	top: 90px;
+}
+
+#work .carousel-control i{
+	display:block;
+	color:#2c3e50;
+	font-size:36px;
+	padding-top:100px;
+	position:relative;
+	z-index:5;
+}
+
+/*contact*/
+
+#contact{
+	height:100%;
+	color:#f4f5f6;
+	padding:80px 0;
+	background:url(../images/contact-bg.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+}
+.line:before{
+	content:'';
+	width:1px;
+	height:300px;
+	background:#939ba4;
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin-top:80px;
+}
+.line-img{
+	width:80px;
+	height:80px;
+	border:1px solid #939ba4;
+	border-radius:50%;
+	text-align:center;
+	position:absolute;
+	left:50%;
+	margin-left:-40px;
+	font-size:25px;
+}
+.line-img{
+	padding-top:20px;
+	background:#2d3e50;
+}
+.line-text{
+	width:41%;
+	padding-top:20px;
+	font-size:20px;
+	border-bottom:1px solid #939ba4;
+}
+
+#contact .line li:nth-child(2){
+	margin-top:40px;
+}
+#contact .line li:nth-child(3){
+	margin-top:40px;
+}
+#contact .line li:nth-child(1) .line-text{
+	float:left;
+	text-align:right;
+}
+
+#contact .line li:nth-child(2) .line-text{
+	float:right;
+	text-align:left;
+}
+#contact .line li:nth-child(3) .line-text{
+	float:left;
+	text-align:right;
+}
+.say-sth p{
+	border:1px solid #939ba4;
+	width:35%;
+	/*height:50px;*/
+	margin-top:30px;
+	padding:10px 0;
+}
+.say-sth p:nth-child(odd){
+	float:left;
+	text-align:right;
+	margin-right:-10px;
+}
+.say-sth p:nth-child(even){
+	float:right;
+	text-align:left;
+	margin-top:50px;
+}
+
+/*animate*/
+.intro-text{
+	animation-delay:0.5s;
+	animation-name:fadeInLeft;
+}
+.intro-text a{
+	animation-delay:1.5s;
+	animation-name:fadeInUp;
+}
+.Baymax{
+	animation-name:fadeInRight;
+	animation-delay:1s;
+}
+.Baymax .say-hi{
+	animation-name:fadeInDown;
+	animation-delay:1.5s;
+}
+
+h2{
+	animation-delay:0.5s;
+	animation-name:fadeInUp;
+}
+.img-self{
+	animation:moveInRight 2s;
+	animation-delay:1s;
+}
+@keyframes moveInRight{
+	0%{
+		transform:translateX(150%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+.info{
+	animation-name:fadeInUp;
+	animation-delay:1.5s;
+}
+
+.info-text span{
+	animation-name:fadeIn;
+	animation-delay:2s;
+}
+
+#work img{
+	animation-name:bounceInUp;
+	animation-delay:1s;
+}
+
+#work .text{
+	animation-name:bounceInRight;
+	animation-delay:1s;
+}
+
+#contact li:nth-child(1){
+	animation-name:fadeInDown;
+	animation-delay:2s;
+}
+#contact li:nth-child(2){
+	animation-name:fadeInDown;
+	animation-delay:3s;
+}
+#contact li:nth-child(3){
+	animation-name:fadeInDown;
+	animation-delay:4s;
+}
