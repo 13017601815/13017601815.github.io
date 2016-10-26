@@ -519,9 +519,10 @@ h2{
 }
 #contact .line li:nth-child(3){
 	margin-top:91px;
+}
+#contact .line li:nth-child(3) a p{
 	color: white;
 }
-
 #contact .line li:nth-child(1) .line-text{
 	float:left;
 	text-align:right;
