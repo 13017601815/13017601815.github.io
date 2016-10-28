@@ -424,7 +424,8 @@ h2{
 #work img{
 	float:left;
 	border:3px solid #f4f5f6;
-
+  width: 500px;
+	height: 235px;
 }
 
 #work .text{
